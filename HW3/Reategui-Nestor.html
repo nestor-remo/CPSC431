@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nestor Reategui </title>
+    <link rel="stylesheet" href="/hw3.css">
+    <script src="/hw3.js" defer></script>
+</head>
+<body>
+    <form method="post" action="/api/hw3">
+        <input type="hidden" name="first-name" value="Nestor">
+        <input type="hidden" name="last-name" value="Reategui">
+
+        <label for="favorite-food">Favorite Peruvian Food:</label>
+        <select name="favorite-food" id="favorite-food">
+            <option value="ceviche">Ceviche</option>
+            <option value="lomo-saltado">Lomo Saltado</option>
+            <option value="aji-de-gallina">Aji de Gallina</option>
+            <option value="arroz-con-pollo">Arroz con Pollo</option>
+            <option value="pollo-a-la-brasa">Pollo a la Brasa</option>
+            <option value="causa-rellena">Causa Rellena</option>
+        </select>
+        <br>
+
+        <label for="random-checkbox">Random Checkbox:</label>
+        <input type="checkbox" name="random-checkbox" id="random-checkbox">
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age"  min="1" max="150">
+        <br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday" id="birthday">
+        <br>
+
+        <label for="availability">Availability:</label>
+        <input type="time" name="availability" id="availability">
+        <br>
+
+        <fieldset>
+            <legend>Favorite Thing:</legend>
+
+            <input type="radio" name="favorite-thing" id="1" value="Music">
+            <label for="1">Music</label><br>
+    
+            <input type="radio" name="favorite-thing" id="2" value="Movies">
+            <label for="2">Movies</label><br>
+    
+            <input type="radio" name="favorite-thing" id="3" value="Books">
+            <label for="3">Books</label><br>
+    
+            <input type="radio" name="favorite-thing" id="4" value="Video Games">
+            <label for="4">Video Games</label><br>
+    
+            <input type="radio" name="favorite-thing" id="5" value="Coding">
+            <label for="5">Coding</label><br>
+    
+            <input type="radio" name="favorite-thing" id="6" value="Sports">
+            <label for="6">Sports</label><br>
+
+            <input type="radio" name="favorite-thing" id="7" value="Anime">
+            <label for="7">Anime</label><br>
+
+            <input type="radio" name="favorite-thing" id="8" value="Cooking">
+            <label for="8">Cooking</label><br>
+
+        </fieldset>
+
+        <label for="comments">Comments:</label><br>
+        <textarea name="comments" id="comments" rows="4" cols="50"></textarea>
+        
+        <input type="submit" value="Submit">
+        
+    </form>
+</body>
+</html>

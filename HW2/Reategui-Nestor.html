@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBausffs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: white;
+        }
+
+        .content {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .bio-image {
+            float: right;
+            margin-left: 15px;
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+        button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+
+        @media screen and (max-width: 600px) {
+            .content {
+                width: 90%;
+                padding: 15px;
+            }
+            .bio-image {
+                float: none;
+                display: block;
+                margin: 0 auto 15px auto;
+                width: 100%;
+                max-width: 300px;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Thebausffs</h1>
+</header>
+
+<main>
+    <div class="content">
+        <section>
+            <h2>About Thebaus</h2>
+            <img src="data:image/jpeg;base64,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" alt="Historical Figure" class="bio-image">
+            <p>Simon "Baus" Hofverberg is a League of Legends streamer/esports player, currently top laner for Los Ratones. He also has nearly one million subscribers on both YouTube and Twitch.</p>
+            <button id="toggleInfo">Show More</button>
+            <p id="extraInfo" class="hidden">Thebausffs is a well-known League of Legends streamer and high-elo player, famous for his unique Sion playstyle. He often plays on the EUW server and is recognized for his inting Sion strategy, where he deliberately dies in fights to maximize tower damage using Sion’s passive.</p>
+        </section>
+
+        <section>
+            <h2>Accomplishments/Fun Facts</h2>
+            <ul>
+                <li>Made appearances as a guest caster and analyst in the LEC 2021 Summer.</li>
+                <li>Travelled to Korea with several other streamers and content creators in April 2022, where he reached the highest rank in the server as a Challenger player</li>
+                <li>Appreciated in Europe for his very endearing streaming persona and known for several terms he popularized such as "we shilling", "solo bolo", "wpgg", and more.</li>
+                <li>Beat Faker, the most renowned esports player of all time, in a 1v1 during a professional match.</li>
+            </ul>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; Nestor Reategui</p>
+</footer>
+
+<script>
+    document.getElementById("toggleInfo").addEventListener("click", function() {
+        var extraInfo = document.getElementById("extraInfo");
+        if (extraInfo.classList.contains("hidden")) {
+            extraInfo.classList.remove("hidden");
+            this.textContent = "Show Less";
+        } else {
+            extraInfo.classList.add("hidden");
+            this.textContent = "Show More";
+        }
+    });
+</script>
+
+</body>
+</html>
